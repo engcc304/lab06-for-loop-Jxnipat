@@ -18,8 +18,35 @@
 #include <stdio.h>
 
 int main() {
+    int N;
+    printf("Enter value: ");
+    scanf("%d", &N);
 
-    //--| YOUR CODE HERE
+    printf("Output: \n  Series: ");
 
-    return 0 ;
-}//end main function
+    // ตรวจสอบว่า N เป็นเลขคี่หรือเลขคู่
+    if (N % 2 == 1) { // เลขคี่
+        for (int i = 1; i <= N; i += 2) {
+            printf("%d ", i);
+        }
+    } else { // เลขคู่
+        for (int i = N; i >= 0; i -= 2) {
+            printf("%d ", i);
+        }
+    }
+
+    printf("\n");
+
+    return 0;
+    //หมดเวรหมดกรรมเเล้วคาบนี้
+}
+
+
+
+
+
+
+
+
+
+
